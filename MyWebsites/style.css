@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header Navbar */
+.navbar {
+    background-color: #0b5d38;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-details h2 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.logo-details p {
+    font-size: 12px;
+    opacity: 0.9;
+    margin-top: 3px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(11, 93, 56, 0.75), rgba(11, 93, 56, 0.75)), url('paste4.jpeg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.hero-buttons .btn {
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #0b5d38;
+}
+
+/* Centers Section */
+.centers-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.centers-section h2 {
+    color: #0b5d38;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #0b5d38;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-body img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0b5d38;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.footer-left p, .footer-right p {
+    margin-bottom: 5px;
+}
+/* 1. Normal Image Styling */
+.card-body img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition ke liye */
+}
+
+/* 2. Hover Zoom Effect */
+.card-body img:hover {
+  transform: scale(1.1); /* Zoom amount (1.1 = 10% zoom) */
+}
+/* Get Involved Button Style */
+.btn-outline, 
+.btn-outline:visited, 
+.btn-outline:link {
+    display: inline-block;
+    padding: 10px 24px;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #1e5631 !important;
+}
+/* Learn More और Get Involved दोनों बटन के लिए एक समान स्टाइल */
+a.btn-outline, 
+a.btn-outline:visited, 
+a.btn-outline:link,
+a.btn-outline:active {
+    display: inline-block;
+    padding: 10px 24px;
+    color: #ffffff !important;         /* हमेशा सफ़ेद टेक्स्ट */
+    border: 2px solid #ffffff;         /* सफ़ेद आउटलाइन बॉर्डर */
+    border-radius: 6px;                /* गोल कोने */
+    text-decoration: none !important;  /* नीचे की लाइन हटाना */
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* बटन पर माउस ले जाने (Hover) पर स्टाइल */
+a.btn-outline:hover {
+    background-color: #ffffff;         /* माउस ले जाने पर बैकग्राउंड वाइट */
+    color: #1e5631 !important;         /* टेक्स्ट ग्रीन */
+}

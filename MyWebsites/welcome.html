@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - Al Khair Educational & Welfare Trust</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      /* होम स्क्रीन का सुंदर बैकग्राउंड */
+      background: linear-gradient(
+                    rgba(20, 80, 40, 0.75), 
+                    rgba(10, 45, 22, 0.85)
+                  ), 
+                  url('paste4.jpeg') center/cover no-repeat fixed;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .welcome-card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 50px 30px;
+      max-width: 750px;
+      width: 100%;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Urdu Name */
+    .urdu-title {
+      font-family: 'Amiri', serif;
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+      direction: rtl;
+      line-height: 1.5;
+    }
+
+    /* English Name */
+    .english-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 15px;
+    }
+
+    /* Registration & Contact Details */
+    .details-box {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .details-box p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+      color: #f1f8e9;
+      font-weight: 500;
+    }
+
+    /* Enter Button */
+    .enter-btn {
+      display: inline-block;
+      padding: 14px 40px;
+      background: #ffffff;
+      color: #1e5631;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .enter-btn:hover {
+      background: #a3e635;
+      color: #0f381c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-card">
+    <!-- Urdu Title -->
+    <h1 class="urdu-title">الخير ایجوکیشنل اینڈ ویلفیئر ٹرسٹ</h1>
+
+    <!-- English Title -->
+    <h2 class="english-title">AL KHAIR EDUCATIONAL AND WELFARE TRUST</h2>
+
+    <!-- Registration & Contact Info -->
+    <div class="details-box">
+      <p><i class="fas fa-file-alt" style="margin-right: 8px;"></i> <strong>Reg No:</strong> HLS-4-00590-2019-20</p>
+      <p><i class="fas fa-phone-alt" style="margin-right: 8px;"></i> <strong>Contact:</strong> 6360513814</p>
+    </div>
+
+    <!-- Enter Main Site Button -->
+    <a href="index.html" class="enter-btn">ENTER WEBSITE <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+  </div>
+
+</body>
+</html>
