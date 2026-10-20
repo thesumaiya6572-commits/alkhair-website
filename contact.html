@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Al Khair Education Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      /* होम स्क्रीन वाला बैकग्राउंड और लाइट ग्रीन ओवरले */
+      background: linear-gradient(
+                    rgba(11, 107, 58, 0.85), 
+                    rgba(15, 65, 40, 0.65)
+                  ), 
+                  url('paste4.jpeg') center/cover no-repeat fixed;
+      min-height: 100vh;
+      color: #ffffff;
+    }
+
+    /* Header Navigation */
+    .navbar {
+      background: rgba(20, 64, 34, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .navbar h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #a3e635;
+    }
+
+    /* Contact Section Container */
+    .contact-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .page-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #f1f8e9;
+    }
+
+    /* Contact Cards */
+    .contact-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      padding: 30px;
+      width: 320px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card i {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    /* Back Button */
+    .back-home {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 30px;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .back-home:hover {
+      background: #ffffff;
+      color: #1e5631;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <h2>Al Khair Educational & Welfare Trust</h2>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="contact-container">
+    <h1 class="page-title">Contact Us</h1>
+    <p class="page-subtitle">For any inquiries, admissions, or support, please reach out to us:</p>
+
+    <div class="contact-cards">
+      <!-- Contact Number 1 -->
+      <div class="contact-card">
+        <i class="fas fa-phone-alt"></i>
+        <h3>primary contact</h3>
+        <p>+91 82966 57171</p> <!-- आप इस नंबर को बाद में बदल सकती हैं -->
+      </div>
+
+      <!-- Contact Number 2 -->
+      <div class="contact-card">
+        <i class="fas fa-phone-alt"></i>
+        <h3>secondary contact</h3>
+        <p>+91 63605 13814 </p> <!-- अपना दूसरा नंबर यहाँ लिखें -->
+      </div>
+
+      <!-- Contact Number 3 -->
+      <div class="contact-card">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Alternative contact</h3>
+        <p>+91 80884 74510 </p> <!-- अपना दूसरा नंबर यहाँ लिखें -->
+      </div>
+    </div>
+
+    <br>
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  </div>
+
+</body>
+</html>

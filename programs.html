@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Al-Khair Educational and Welfare Trust</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            /* Background image */
+            background-image: url('paste4.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        /* Light Green Overlay */
+        .overlay {
+            background-color: rgba(11, 107, 58, 0.85);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(11, 107, 58, 0.85);
+            padding-bottom: 15px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .program-list {
+            list-style: none;
+        }
+
+        .program-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .program-item:hover {
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .program-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .program-desc {
+            font-size: 1rem;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Back to Home Button Style */
+        .footer-action {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ffffff;
+            color: #2e7d32;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Overlay Wrapper -->
+    <div class="overlay">
+        <div class="container">
+            <h1>Our Programs</h1>
+
+            <div class="program-list">
+                
+                <div class="program-item">
+                    <div class="program-title">1. Hifz Course</div>
+                    <div class="program-desc">No age limit, available both Online and Offline.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">2. Two-Year Alimah Course</div>
+                    <div class="program-desc">A complete two-year Alimah program.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">3. One-Year Fazilat Course</div>
+                    <div class="program-desc">A one-year advanced Islamic scholarship course.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">4. Two-Year Shariah Course</div>
+                    <div class="program-desc">A comprehensive two-year Shariah program.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">5. Nikah Course</div>
+                    <div class="program-desc">A special course on the rulings and issues of Nikah (Marriage).</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">6. Teacher Training Course</div>
+                    <div class="program-desc">A professional training program for teachers.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">7. Counseling</div>
+                    <div class="program-desc">Sessions for personal and family guidance.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">8. Spoken Arabic and English</div>
+                    <div class="program-desc">Special spoken courses for Arabic and English languages.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">9. Evening Maktab</div>
+                    <div class="program-desc">Classes available in the evening, both Online and Offline.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">10. Deeni Taleem (Islamic Education)</div>
+                    <div class="program-desc">Islamic education for female students of all ages.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">11. Home Science</div>
+                    <div class="program-desc">Training in household management and practical life skills for women.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">12. Online and Offline Classes</div>
+                    <div class="program-desc">For the convenience of all students, the institute offers both online and offline classes.</div>
+                </div>
+
+                <div class="program-item">
+                    <div class="program-title">13. Sahi Rishte (Suitable Matches)</div>
+                    <div class="program-desc">Guidance for pious and suitable matrimonial matches.</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="footer-action">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

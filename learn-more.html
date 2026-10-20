@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn More - Al Khair Education Academy</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Body & Page Container - Updated for paste4 background image */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      
+      /* Dark Emerald Green Overlay + Apki local image paste4 */
+      background: linear-gradient(
+                    rgba(6, 64, 43, 0.85), 
+                    rgba(3, 40, 26, 0.90)
+                  ), 
+                  url('paste4.jpeg') center/cover no-repeat fixed; /* <-- Yahan paste4 add ho gaya h */
+                  
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    /* Glass Container Box */
+    .learn-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      padding: 50px 40px;
+      max-width: 850px;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Main Title */
+    .learn-card h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      color: #ffffff;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    /* Content Paragraphs */
+    .learn-card p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #e2f0d9;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    /* Highlighted Box for Courses */
+    .courses-box {
+      background: rgba(255, 255, 255, 0.12);
+      border-left: 4px solid #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 25px 0;
+      text-align: left;
+    }
+
+    .courses-box p {
+      font-size: 1.1rem;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    /* Admission CTA */
+    .admission-banner {
+      margin-top: 35px;
+      background: #ffffff;
+      color: #06402b;
+      padding: 18px 30px;
+      border-radius: 12px;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 1.2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 25px;
+      background: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ffffff;
+      color: #06402b;
+    }
+
+    @media (max-width: 768px) {
+      .learn-card {
+        padding: 30px 20px;
+      }
+      .learn-card h1 {
+        font-size: 2rem;
+      }
+      .learn-card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="learn-card">
+    <!-- Title -->
+    <h1>LEARN MORE</h1>
+
+    <!-- Welcome Paragraph -->
+    <p>
+      Welcome to our institute, dedicated to providing authentic Islamic education for women and girls.
+    </p>
+
+    <!-- Courses Offered -->
+    <div class="courses-box">
+      <p>
+        <i class="fas fa-book-reader" style="margin-right: 8px;"></i>
+        We offer <strong>Hifz, Aalimah, Fazeelat, Shariah</strong>, and many other special courses through <strong>Online & Offline</strong> classes.
+      </p>
+    </div>
+
+    <!-- Aim & Mission -->
+    <p>
+      Our aim is to spread the light of the Quran and Sunnah to every home and empower women with Deeni Taleem, knowledge, and confidence.
+    </p>
+
+    <!-- Admission Call to Action -->
+    <div class="admission-banner">
+      <i class="fas fa-bullhorn"></i> Admissions Open - Join Us Today!
+    </div>
+
+    <br>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  </div>
+
+</body>
+</html>

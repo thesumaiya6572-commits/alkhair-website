@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Involved - Al Khair Education Academy</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Section Styles */
+    .get-involved-section {
+      position: relative;
+      padding: 80px 20px;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff; /* Text in White */
+      
+      /* Image me dikhne wali green foliage/leaves background image aur matching dark green overlay */
+      background: linear-gradient(
+                    rgba(12, 99, 58, 0.85), 
+                    rgba(10, 75, 45, 0.90)
+                  ), 
+                  url('paste4.jpeg') center/cover no-repeat fixed;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Section Header */
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .section-header p {
+      font-size: 1.15rem;
+      max-width: 750px;
+      margin: 0 auto 25px;
+      color: #e8f5e9;
+      line-height: 1.6;
+    }
+
+    /* Quick Links Grid */
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .quick-tag {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+    }
+
+    .quick-tag:hover {
+      background: #ffffff;
+      color: #0c633a;
+      transform: translateY(-3px);
+    }
+
+    /* Main Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    /* Transparent Glass Card */
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .card p {
+      font-size: 0.98rem;
+      color: #f1f8e9;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn-action {
+      display: inline-block;
+      text-align: center;
+      background: #ffffff;
+      color: #0c633a;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-action:hover {
+      background: #e8f5e9;
+      color: #053b21;
+    }
+
+    /* Special Styling for Pray For Us Card */
+    .card.dua-card {
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .dua-arabic {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #ffffff;
+      direction: rtl;
+    }
+
+    /* Back to Home Button Container */
+    .back-home-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .btn-back-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+    }
+
+    .btn-back-home:hover {
+      background: #ffffff;
+      color: #0c633a;
+      border-color: #ffffff;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .section-header h2 {
+        font-size: 2.2rem;
+      }
+      .get-involved-section {
+        padding: 50px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GET INVOLVED SECTION START -->
+  <section class="get-involved-section" id="get-involved">
+    <div class="container">
+      
+      <!-- Section Title & Subtitle -->
+      <div class="section-header">
+        <h2>Join Us / Participate / Become a Part of Us</h2>
+        <p>It is an invitation for people to connect with your institute, such as:</p>
+        
+        <!-- Quick Action Tags -->
+        <div class="quick-links">
+          <span class="quick-tag"><i class="fas fa-user-graduates"></i> Take Admission</span>
+          <span class="quick-tag"><i class="fas fa-chalkboard-teacher"></i> Become a Teacher</span>
+          <span class="quick-tag"><i class="fas fa-hands-helping"></i> Help as a Volunteer</span>
+          <span class="quick-tag"><i class="fas fa-hand-holding-heart"></i> Give Donations</span>
+        </div>
+      </div>
+
+      <!-- Action Cards Grid -->
+      <div class="cards-grid">
+
+        <!-- Card 1: Sponsor a Student -->
+        <div class="card">
+          <div>
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Sponsor a Student</h3>
+            <p>Sponsor the complete education of a poor or deserving student and bright up their future.</p>
+          </div>
+          <a href="#sponsor" class="btn-action">Sponsor Now</a>
+        </div>
+
+        <!-- Card 2: Donate Books & Resources -->
+        <div class="card">
+          <div>
+            <div class="card-icon"><i class="fas fa-quran"></i></div>
+            <h3>Donate Books & Resources</h3>
+            <p>Donate Qurans, Islamic books, and study materials for students in need.</p>
+          </div>
+          <a href="#donate-books" class="btn-action">Donate Materials</a>
+        </div>
+
+        <!-- Card 3: Join Our Events -->
+        <div class="card">
+          <div>
+            <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h3>Join Our Events</h3>
+            <p>Participate in our Islamic programs, workshops, and annual functions.</p>
+          </div>
+          <a href="#events" class="btn-action">View Events</a>
+        </div>
+
+        <!-- Card 4: Become a Member -->
+        <div class="card">
+          <div>
+            <div class="card-icon"><i class="fas fa-id-card"></i></div>
+            <h3>Become a Member</h3>
+            <p>Become a regular member and supporter of our institute to help us grow.</p>
+          </div>
+          <a href="#membership" class="btn-action">Join Membership</a>
+        </div>
+
+        <!-- Card 5: Pray for Us -->
+        <div class="card dua-card">
+          <div>
+            <div class="card-icon"><i class="fas fa-hands"></i></div>
+            <h3>Pray for Us</h3>
+            <div class="dua-arabic">جَزَاكُمُ ٱللَّٰهُ خَيْرًا</div>
+            <p>Your sincere Duas are the biggest support for our mission and cause.</p>
+          </div>
+          <a href="#pray" class="btn-action">Offer Dua</a>
+        </div>
+
+      </div>
+
+      <!-- Back to Home Button -->
+      <div class="back-home-container">
+        <a href="index.html" class="btn-back-home">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- GET INVOLVED SECTION END -->
+
+</body>
+</html>
